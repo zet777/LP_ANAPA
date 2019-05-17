@@ -1433,4 +1433,8 @@ a {
 .our-yard:hover {
   flex:0 0 50%;
   max-width: 100%;
+
+}
+.our-yard {
+  transition: .5s all ease;
 }
