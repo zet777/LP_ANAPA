@@ -1438,3 +1438,10 @@ a {
 .our-yard {
   transition: .5s all ease;
 }
+.align_items-center{
+  align-items:center;
+  justify-content: center;
+}
+.yard-img-height{
+  height: 233px;
+}
