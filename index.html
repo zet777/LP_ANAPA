@@ -70,7 +70,7 @@
                         </ul>
                       </li>
                       <li><a href="#anapa-img">Красоты Анапы</a></li>
-                      <li><a href="">Контакты</a></li>
+                      <li><a href="#contacts">Контакты</a></li>
                      
                     </ul>
                   </div>
@@ -297,15 +297,7 @@
   </div>  
 </div>
 </div>
-<script type="text/javascript">
-$(function(){
-        $("a[href^='#']").click(function(){
-                var _href = $(this).attr("href");
-                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-                return false;
-        });
-});
-</script>
+
 
 
 <!-- <div class="site-section">
@@ -459,7 +451,7 @@ $(function(){
     </div>
   </div>
 </div>
-<div class="py-5 quick-contact-info ">
+<div class="py-5 quick-contact-info" id="contacts">
   <div class="container">
     <div class="row align_items-center">
       <div class="col-md-4 text-center">
@@ -559,7 +551,7 @@ $(function(){
     <script src="js/main.js"></script>
     
 
-    <script>
+    <!-- <script>
       document.addEventListener('DOMContentLoaded', function() {
         var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
 
@@ -576,7 +568,15 @@ $(function(){
           });
         }
       });
-    </script>
-
+    </script> -->
+<script type="text/javascript">
+$(function(){
+        $("a[href^='#']").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                return false;
+        });
+});
+</script>
   </body>
   </html>
