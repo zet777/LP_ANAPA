@@ -1425,7 +1425,10 @@ a {
   -webkit-transition: .2s all ease;
   -o-transition: .2s all ease;
   transition: .2s all ease;
-  opacity: 1; }
+  opacity: 1; 
+  height: 185px;
+  width: 278px;
+}
 
 .img-opacity:hover {
   cursor: -webkit-zoom-in;
