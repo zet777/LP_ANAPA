@@ -1545,10 +1545,14 @@ footer{
   border-top-left-radius: 50px;
 }
 .menu-nav__link{
-  display:inline-block;
-  text-decoration: none;
-  color: #222;
-  margin-right: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .menu-nav{
