@@ -1450,3 +1450,22 @@ a {
 .yard-img-height{
   height: 233px;
 }
+.contact{
+  font-size: 1.5rem;
+}
+.white {
+  color: #fff;
+}
+.phone{
+  font-size: 1.5rem;
+}
+.footer__hr{
+  border-top: 1px solid rgba(6, 0, 0, 0.9);
+}
+.footer__copyright{
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+footer{
+  display: flex;
+}
