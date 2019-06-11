@@ -1585,6 +1585,7 @@ footer{
     color: #00bfff;
     display: flex;
     justify-content: center;
+    font-style: italic;
 }
 
 @media (max-width: 769px){
