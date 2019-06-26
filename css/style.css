@@ -1269,7 +1269,7 @@ a {
     color: #000; }
 
 .quick-contact-info {
-  background: #3a699a;;
+  background: #3a699a;
   color: rgba(255, 255, 255, 0.5); }
   .quick-contact-info h2 {
     color: #fff;
@@ -1456,6 +1456,13 @@ a {
 .contact{
   font-size: 1.5rem;
 }
+.contacts{
+  display: flex;
+  justify-content: space-around;
+  background: #3a699a;
+  flex-wrap:wrap;
+
+}
 .white {
   color: #fff;
 }
@@ -1467,12 +1474,10 @@ a {
   border-top: 1px solid rgba(6, 0, 0, 0.9);
 }
 .footer__copyright{
-  margin: 0 auto;
   font-size: 1.5rem;
+  text-align: center;
 }
-footer{
-  display: flex;
-}
+
 
 
 .menu-btn{
@@ -1587,7 +1592,9 @@ footer{
     justify-content: center;
     font-style: italic;
 }
-
+.map__contacts{
+  margin-top: 30px;
+}
 @media (max-width: 769px){
     .container__top{
     margin-top: 200px;
