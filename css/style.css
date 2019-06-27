@@ -814,7 +814,6 @@ a {
       right: 0;
       bottom: 0;
       left: 0;
-      background: -moz-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
       background: -webkit-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
       background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(18%, transparent), color-stop(99%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
       background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
@@ -1439,16 +1438,24 @@ a {
   .img-opacity:hover img {
     opacity: .5; }
 .our-yard:hover {
-  flex:0 0 50%;
+  -webkit-box-flex:0;
+      -ms-flex:0 0 50%;
+          flex:0 0 50%;
   max-width: 100%;
 
 }
 .our-yard {
+  -webkit-transition: .5s all ease;
+  -o-transition: .5s all ease;
   transition: .5s all ease;
 }
 .align_items-center{
-  align-items:center;
-  justify-content: center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .yard-img-height{
   height: 233px;
@@ -1457,10 +1464,14 @@ a {
   font-size: 1.5rem;
 }
 .contacts{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: #3a699a;
-  flex-wrap:wrap;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
 
 }
 .white {
@@ -1477,8 +1488,6 @@ a {
   font-size: 1.5rem;
   text-align: center;
 }
-
-
 
 .menu-btn{
   display: block;
@@ -1515,38 +1524,55 @@ a {
 }
 
 .menu-btn span::before{
-  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .menu-btn span::after{
-  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .menu-btn_active span:before {
-  transform: rotate(-35deg);
+  -webkit-transform: rotate(-35deg);
+      -ms-transform: rotate(-35deg);
+          transform: rotate(-35deg);
   width: 10px;
-  transform-origin: left bottom;
+  -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+          transform-origin: left bottom;
 }
 
 .menu-btn_active span:after {
-  transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+          transform: rotate(35deg);
   width: 10px;
-  transform-origin: left top;
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
 }
 
 .menu-block{
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .menu-nav{
   background-color: #fff;
-  height: 50px;
-  line-height: 50px;
+  height: 50px;a
+  line-height: 50px;line-height
   padding-left: 20px;
   padding-right: 40px;
   margin-right: -25px;
@@ -1565,14 +1591,22 @@ a {
 }
 
 .menu-nav{
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
-  transform-origin: right center; /*смещаеп трансформацию вправо */
-  transform: scaleX(0) translateX(4.5%);
+  -webkit-transform-origin: right center;
+      -ms-transform-origin: right center;
+          transform-origin: right center; /*смещаеп трансформацию вправо */
+  -webkit-transform: scaleX(0) translateX(4.5%);
+      -ms-transform: scaleX(0) translateX(4.5%);
+          transform: scaleX(0) translateX(4.5%);
   opacity: 0;
 }
 
 .menu-nav_active{
-  transform: scaleX(1) translateX(0%);
+  -webkit-transform: scaleX(1) translateX(0%);
+      -ms-transform: scaleX(1) translateX(0%);
+          transform: scaleX(1) translateX(0%);
   opacity: 1;
 }
 .text-centr{
@@ -1588,13 +1622,19 @@ a {
     font-size: 1.3rem;
     font-weight: 600;
     color: #00bfff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-style: italic;
 }
 .map__contacts{
   margin-top: 30px;
 }
+
+/*MEDIA перенести в отдельный CSS*/
 @media (max-width: 769px){
     .container__top{
     margin-top: 200px;
